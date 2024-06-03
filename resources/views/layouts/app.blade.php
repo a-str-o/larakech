@@ -24,6 +24,13 @@
             document.getElementById('searchForm').submit();
         }, 500); 
     }
+    function closeErrorModal() {
+        document.getElementById('error-modal').classList.add('hidden');
+    }
+
+    @if($errors->any())
+        document.getElementById('error-modal').classList.remove('hidden');
+    @endif
 </script>
 </body>
 </html>

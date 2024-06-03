@@ -35,5 +35,6 @@
     @include('components.modals.view')
     @include('components.modals.edit')
     @include('components.modals.delete')
+    @include('components.alert')
 @endsection
 
