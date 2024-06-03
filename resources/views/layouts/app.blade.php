@@ -15,5 +15,15 @@
         @yield('content')
     </div>
     <script src="{{ asset('/js/my_js.js') }}"></script>
+    <script>
+    let searchTimeout;
+
+    function submitSearchForm() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+            document.getElementById('searchForm').submit();
+        }, 500); 
+    }
+</script>
 </body>
 </html>
